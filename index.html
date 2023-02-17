@@ -26,19 +26,19 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Triangle</h2>
-              <p>Area (A) = 0.5 × b × h</p>
+              <p>Area (A) = 0.5 × <span id="triangle-b">b</span> × <span id="triangle-h">h</span></p>
               <div class="flex gap-2">
-              <input type="text" placeholder="b" class="input w-full" />cm
-              <input type="text" placeholder="h" class="input w-full" />cm
+              <input id="triangle-field-b" type="text" placeholder="b" class="input w-full" />cm
+              <input id="triangle-field-h" type="text" placeholder="h" class="input w-full" />cm
             </div>
               <div class="card-actions">
-                <button class="btn btn-wide">Calculate</button>
+                <button id="triangle-btn" class="btn btn-wide">Calculate</button>
               </div>
             </div>
           </div>
         <div id="rectangle-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Rectangle</h2>
@@ -54,7 +54,7 @@
           </div>
         <div id="parallelogram-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Parallelogram</h2>
@@ -71,7 +71,7 @@
           </div>
         <div id="rhombus-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Rhombus</h2>
@@ -88,7 +88,7 @@
           </div>
         <div id="pentagon-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Pentagon</h2>
@@ -105,7 +105,7 @@
           </div>
         <div id="ellipse-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+              <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Ellipse</h2>
@@ -124,11 +124,12 @@
         <div class="card bg-base-300 shadow-xl">
             <div class="card-body">
               <h2 class="card-title"><u>Area Calculation</u></h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, in.</p>
+              <p id="total"></p>
             </div>
           </div>
     </section>
     <!-- Javascript Link Added -->
     <script src="js/random-bg.js"></script>
+    <script src="js/geometry.js"></script>
 </body>
 </html>
