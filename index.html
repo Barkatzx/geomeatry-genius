@@ -10,17 +10,17 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="container mx-auto">
-    <header class=" navbar bg-base-200">
+    <header class=" navbar bg-base-300 shadow-xl rounded-xl">
             <div class="navbar-start">
               <span class="text-4xl font-semibold">Geometry</span> 
             </div>
             <div class="navbar-end">
-              <a class="btn" href="blog.html">Blog</a>
+              <a class="btn hover:btn-info" href="blog.html">Blog</a>
             </div>
     </header>
-    <section class="flex flex-col md:flex-row gap-4 mt-12">
+    <section class="flex flex-col md:flex-row gap-4 mt-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="card w-50 bg-base-200 shadow-xl">
+        <div id="triangle-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
             </figure>
@@ -36,7 +36,7 @@
               </div>
             </div>
           </div>
-        <div class="card w-50 bg-base-200 shadow-xl">
+        <div id="rectangle-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -52,7 +52,7 @@
               </div>
             </div>
           </div>
-        <div class="card w-50 bg-base-200 shadow-xl">
+        <div id="parallelogram-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -69,7 +69,7 @@
               </div>
             </div>
           </div>
-        <div class="card w-50 bg-base-200 shadow-xl">
+        <div id="rhombus-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-        <div class="card w-50 bg-base-200 shadow-xl">
+        <div id="pentagon-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -103,7 +103,7 @@
               </div>
             </div>
           </div>
-        <div class="card w-50 bg-base-200 shadow-xl">
+        <div id="ellipse-bg" class="card w-50 bg-base-300 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-200 shadow-xl">
+        <div class="card bg-base-300 shadow-xl">
             <div class="card-body">
               <h2 class="card-title"><u>Area Calculation</u></h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, in.</p>
@@ -129,6 +129,6 @@
           </div>
     </section>
     <!-- Javascript Link Added -->
-    <script src="geometry.js"></script>
+    <script src="js/random-bg.js"></script>
 </body>
 </html>
