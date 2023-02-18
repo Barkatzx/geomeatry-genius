@@ -74,15 +74,15 @@
               <img src="images/rhombus.png" alt="Rhombus" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rhombus</h2>
-              <p>Area (A) = 0.5 × d<sub>1</sub> × d <sub>2</sub></p>
-              <h3>d <sub>1</sub> = 16cm  d <sub>2</sub> = 8cm</h3>
+              <h2 class="card-title" id="rhombus-name">Rhombus</h2>
+              <p>Area (A) = 0.5 × <span id="rhombus-d1">d<sub>1</sub></span> × <span id="rhombus-d2">d <sub>2</sub></span></p>
+              <h3>d <sub>1</sub> = 16cm  d<sub>2</sub> = 8cm</h3>
               <div class="flex gap-2">
-                <input type="text" placeholder="d1" class="input w-full" />cm
-                <input type="text" placeholder="d2" class="input w-full" />cm
+                <input type="text" placeholder="d1" class="input w-full" id="rhombus-field1" />cm
+                <input type="text" placeholder="d2" class="input w-full" id="rhombus-field2" />cm
               </div>
               <div class="card-actions">
-                <button class="btn btn-wide">Calculate</button>
+                <button class="btn btn-wide" id="rhombus-btn">Calculate</button>
               </div>
             </div>
           </div>
