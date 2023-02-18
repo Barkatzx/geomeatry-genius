@@ -91,15 +91,15 @@
               <img src="images/pentagon.png" alt="Pentagon" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Pentagon</h2>
-              <p>Area (A) = 0.5 × p × b</p>
+              <h2 class="card-title" id="pentagon-name">Pentagon</h2>
+              <p>Area (A) = 0.5 × <span id="pentagon-p">p</span> × <span id="pentagon-b">b</span></p>
               <h3>p = 6cm, b = 10cm</h3>
               <div class="flex gap-2">
-                <input type="text" placeholder="p" class="input w-full" />cm
-                <input type="text" placeholder="b" class="input w-full" />cm
+                <input type="text" placeholder="p" class="input w-full" id="pentagonp" />cm
+                <input type="text" placeholder="b" class="input w-full" id="pentagonb" />cm
               </div>
               <div class="card-actions">
-                <button class="btn btn-wide">Calculate</button>
+                <button class="btn btn-wide" id="pentagon-btn">Calculate</button>
               </div>
             </div>
           </div>
@@ -108,20 +108,20 @@
               <img src="images/ellipse.png" alt="Ellipse" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Ellipse</h2>
-              <p>Area (A) = πab</p>
+              <h2 class="card-title" id="ellipse-name">Ellipse</h2>
+              <p>Area (A) = π<span id="ellipsea">a</span><span id="ellipseb">b</span></p>
               <h3>a = 10cm, b = 4cm</h3>
               <div class="flex gap-2">
-                <input type="text" placeholder="a" class="input w-full" />cm
-                <input type="text" placeholder="b" class="input w-full" />cm
+                <input type="text" placeholder="a" class="input w-full" id="ellipse-a" />cm
+                <input type="text" placeholder="b" class="input w-full" id="ellipse-b" />cm
               </div>
               <div class="card-actions">
-                <button class="btn btn-wide">Calculate</button>
+                <button class="btn btn-wide" id="ellipse-btn">Calculate</button>
               </div>
             </div>
           </div>
         </div>
-          <div class="card bg-base-300 shadow-xl w-full md:w-[40%] lg:w-[40%] mx-auto">
+          <div class="card bg-base-300 shadow-xl w-full h-50 md:w-[40%] lg:w-[40%] mx-auto">
             <h1 class="text-3xl text-center font-bold underline mt-5 mb-4">
               Area Calculation
             </h1>
@@ -135,7 +135,6 @@
     </section>
     <!-- Javascript Link Added -->
     <script src="js/random-bg.js"></script>
-    <!-- <script src="js/geometry.js"></script> -->
     <script src="js/final.js"></script>
 </body>
 </html>

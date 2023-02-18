@@ -1,5 +1,5 @@
 function calculateTriangleArea() {
-    const input1Value = parseFloat(document.getElementById("triangle-field-b").value);
+    const input1Value = parseFloat(document.getElementById("pentagonp").value);
     const input2Value = parseFloat(document.getElementById("triangle-field-h").value);
   
     if (isNaN(input1Value) || isNaN(input2Value)) {
