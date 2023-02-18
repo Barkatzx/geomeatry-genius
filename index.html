@@ -28,8 +28,8 @@
               <h2 class="card-title" id="triangle-name">Triangle</h2>
               <p>Area (A) = 0.5 × <span id="triangle-b">b</span> × <span id="triangle-h">h</span></p>
               <div class="flex gap-2">
-              <input id="triangle-field-b" type="text" placeholder="b" class="input w-full" />cm
-              <input id="triangle-field-h" type="text" placeholder="h" class="input w-full" />cm
+              <input id="triangle-fieldb" type="text" placeholder="b" class="input w-full" />cm
+              <input id="triangle-fieldh" type="text" placeholder="h" class="input w-full" />cm
             </div>
               <div class="card-actions">
                 <button id="triangle-btn" class="btn btn-wide">Calculate</button>
@@ -41,14 +41,14 @@
               <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangle</h2>
-              <p>Area (A) = w × I</p>
+              <h2 class="card-title" id="rectangle-name">Rectangle</h2>
+              <p>Area (A) = <span id="rectangle-w">w</span> × <span id="rectangle-i">I</span></p>
               <div class="flex gap-2">
-                <input type="text" placeholder="w" class="input w-full" />cm
-                <input type="text" placeholder="l" class="input w-full" />cm
+                <input type="text" placeholder="w" class="input w-full" id="rectangle-fieldw" />cm
+                <input type="text" placeholder="l" class="input w-full" id="rectangle-fieldi" />cm
               </div>
               <div class="card-actions">
-                <button class="btn btn-wide">Calculate</button>
+                <button class="btn btn-wide" id="rectangle-btn">Calculate</button>
               </div>
             </div>
           </div>
@@ -57,15 +57,15 @@
               <img src="images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Parallelogram</h2>
-              <p>Area (A) = b × h</p>
+              <h2 class="card-title" id="parallelogram-name">Parallelogram</h2>
+              <p>Area (A) = <span id="parallelogram-totalb">b</span> × <span id="parallelogram-totalh">h</span></p>
               <h3>b=10cm, h=12cm</h3>
               <div class="flex gap-2">
-                <input type="text" placeholder="b" class="input w-full" />cm
-                <input type="text" placeholder="h" class="input w-full" />cm
+                <input type="text" placeholder="b" class="input w-full" id="parallelogram-b" />cm
+                <input type="text" placeholder="h" class="input w-full" id="parallelogram-h" />cm
               </div>
               <div class="card-actions">
-                <button class="btn btn-wide">Calculate</button>
+                <button class="btn btn-wide" id="parallelogram-btn">Calculate</button>
               </div>
             </div>
           </div>
@@ -121,34 +121,13 @@
             </div>
           </div>
         </div>
-        <!-- <div class="card bg-base-300 shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title"><u>Area Calculation</u></h2>
-              <p id="total"></p>
-            </div>
-          </div> -->
-          <div class="card bg-base-300 shadow-xl cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
-            <h1 class="text-3xl text-center font-bold underline mt-5">
+          <div class="card bg-base-300 shadow-xl w-full md:w-[40%] lg:w-[40%] mx-auto">
+            <h1 class="text-3xl text-center font-bold underline mt-5 mb-4">
               Area Calculation
             </h1>
             <div class="overflow-x-auto">
               <table class="table w-full">
-                <!-- <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                  </tr>
-                </thead> -->
                 <tbody id="table-container" class="mt-2">
-                  <!-- <tr>
-                    <th></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -157,6 +136,6 @@
     <!-- Javascript Link Added -->
     <script src="js/random-bg.js"></script>
     <!-- <script src="js/geometry.js"></script> -->
-    <script src="js/area.js"></script>
+    <script src="js/final.js"></script>
 </body>
 </html>

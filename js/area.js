@@ -12,7 +12,6 @@ function calculateTriangleArea() {
     const mainName = document.getElementById("triangle-name").innerText;
   
     const total = 0.5 * input1Value * input2Value;
-    console.log(typeof(total));
   
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
