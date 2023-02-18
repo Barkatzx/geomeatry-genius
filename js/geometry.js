@@ -4,12 +4,11 @@ document.getElementById('triangle-btn').addEventListener("click", function() {
     serial += 1;
     const input1Value = parseFloat(document.getElementById("triangle-fieldb").value);
     const input2Value = parseFloat(document.getElementById("triangle-fieldh").value);
+   
+  if (!validatePositiveNumberInput(input1Value, input2Value)) {
+    return;
+}
 
-    if (isNaN(input1Value) || isNaN(input2Value)) {
-        alert("Invalid input! Please enter a valid number.");
-        return;
-      }
-  
     document.getElementById("triangle-b").innerText = input1Value;
     document.getElementById("triangle-h").innerText = input2Value;
     const mainName = document.getElementById("triangle-name").innerText;
@@ -27,10 +26,9 @@ document.getElementById('rectangle-btn').addEventListener("click", function() {
     const input1Value = parseFloat(document.getElementById("rectangle-fieldw").value);
     const input2Value = parseFloat(document.getElementById("rectangle-fieldi").value);
 
-    if (isNaN(input1Value) || isNaN(input2Value)) {
-        alert("Invalid input! Please enter a valid number.");
-        return;
-      }
+    if (!validatePositiveNumberInput(input1Value, input2Value)) {
+      return;
+  }
   
     document.getElementById("rectangle-w").innerText = input1Value;
     document.getElementById("rectangle-i").innerText = input2Value;
@@ -49,10 +47,9 @@ document.getElementById('parallelogram-btn').addEventListener("click", function(
     const input1Value = parseFloat(document.getElementById("parallelogram-b").value);
     const input2Value = parseFloat(document.getElementById("parallelogram-h").value);
 
-    if (isNaN(input1Value) || isNaN(input2Value)) {
-        alert("Invalid input! Please enter a valid number.");
-        return;
-      }
+    if (!validatePositiveNumberInput(input1Value, input2Value)) {
+      return;
+  }
   
     document.getElementById("parallelogram-totalb").innerText = input1Value;
     document.getElementById("parallelogram-totalh").innerText = input2Value;
@@ -71,10 +68,9 @@ document.getElementById('rhombus-btn').addEventListener("click", function() {
     const input1Value = parseFloat(document.getElementById("rhombus-field1").value);
     const input2Value = parseFloat(document.getElementById("rhombus-field2").value);
 
-    if (isNaN(input1Value) || isNaN(input2Value)) {
-        alert("Invalid input! Please enter a valid number.");
-        return;
-      }
+    if (!validatePositiveNumberInput(input1Value, input2Value)) {
+      return;
+  }
   
     document.getElementById("rhombus-d1").innerText = input1Value;
     document.getElementById("rhombus-d2").innerText = input2Value;
@@ -92,10 +88,9 @@ document.getElementById('pentagon-btn').addEventListener("click", function() {
     const input1Value = parseFloat(document.getElementById("pentagonp").value);
     const input2Value = parseFloat(document.getElementById("pentagonb").value);
 
-    if (isNaN(input1Value) || isNaN(input2Value)) {
-        alert("Invalid input! Please enter a valid number.");
-        return;
-      }
+    if (!validatePositiveNumberInput(input1Value, input2Value)) {
+      return;
+  }
   
     document.getElementById("pentagon-p").innerText = input1Value;
     document.getElementById("pentagon-b").innerText = input2Value;
@@ -112,11 +107,10 @@ document.getElementById('ellipse-btn').addEventListener("click", function() {
     const input1Value = parseFloat(document.getElementById("ellipse-a").value);
     const input2Value = parseFloat(document.getElementById("ellipse-b").value);
 
-    if (isNaN(input1Value) || isNaN(input2Value)) {
-        alert("Invalid input! Please enter a valid number.");
-        return;
-      }
-  
+    if (!validatePositiveNumberInput(input1Value, input2Value)) {
+      return;
+  }
+
     document.getElementById("ellipsea").innerText = input1Value;
     document.getElementById("ellipseb").innerText = input2Value;
     const mainName = document.getElementById("ellipse-name").innerText;
@@ -140,4 +134,13 @@ function displayData(mainName, totalValue){
     <td> <button class="btn-primary rounded-btn">convert to m<sup>2</sup></button> </td>
     `
     container.appendChild(tr);
+}
+// Function Declare For Validation
+function validatePositiveNumberInput(input1Value, input2Value) {
+  if (isNaN(input1Value) || isNaN(input2Value) || input1Value <= 0 || input2Value <= 0) {
+      alert("Invalid input! Please enter a valid number which greater than 0.");
+      return false;
+  } else {
+      return true;
+  }
 }
