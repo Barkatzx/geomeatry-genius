@@ -25,7 +25,7 @@
               <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+              <h2 class="card-title" id="triangle-name">Triangle</h2>
               <p>Area (A) = 0.5 × <span id="triangle-b">b</span> × <span id="triangle-h">h</span></p>
               <div class="flex gap-2">
               <input id="triangle-field-b" type="text" placeholder="b" class="input w-full" />cm
@@ -121,15 +121,42 @@
             </div>
           </div>
         </div>
-        <div class="card bg-base-300 shadow-xl">
+        <!-- <div class="card bg-base-300 shadow-xl">
             <div class="card-body">
               <h2 class="card-title"><u>Area Calculation</u></h2>
               <p id="total"></p>
+            </div>
+          </div> -->
+          <div class="card bg-base-300 shadow-xl cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+            <h1 class="text-3xl text-center font-bold underline mt-5">
+              Area Calculation
+            </h1>
+            <div class="overflow-x-auto">
+              <table class="table w-full">
+                <!-- <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead> -->
+                <tbody id="table-container" class="mt-2">
+                  <!-- <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr> -->
+                </tbody>
+              </table>
             </div>
           </div>
     </section>
     <!-- Javascript Link Added -->
     <script src="js/random-bg.js"></script>
-    <script src="js/geometry.js"></script>
+    <!-- <script src="js/geometry.js"></script> -->
+    <script src="js/area.js"></script>
 </body>
 </html>
